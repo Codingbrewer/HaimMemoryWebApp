@@ -6,7 +6,7 @@
     padding: 5%;
     justify-content: center;
     align-items: center;
-    height: 380px;
+    min-height: 100vh;
 }
 
 .postBody {
@@ -397,7 +397,14 @@ margin-top: 20px;
 
 }
 
-@media ( max-width: 500px) {
+@media ( max-width: 600px) {
+    
+      .galleryList {
+        display: grid;
+        grid-template-columns: 1fr ;
+    
+    }
+
 
 .postList {
     grid-template-columns: 1fr;
