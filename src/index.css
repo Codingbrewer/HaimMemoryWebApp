@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-size: 1.4em;
-  background-color: grey;
+  background-color: rgb(181, 196, 219);
   color: #333;
   min-height: 400px;
   margin-bottom: 100px;
@@ -14,8 +14,9 @@ body {
 
 body::after {
   content: "";
-  background-image: url('./images/backgr.png');
-  background-repeat: no-repeat;
+  background-image: url('./images/backgr2.png');
+  background-size: 100%;
+  background-repeat:no-repeat ;
   opacity: 0.7;
   top: 0;
   left: 0;
