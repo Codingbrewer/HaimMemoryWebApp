@@ -1,0 +1,167 @@
+.navbar {
+    width: 100%;
+    background-color: black;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    
+  }
+  .navbar ul {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: center;
+  }
+  .logo {
+   left: 0;
+   width: 50%;
+   font-size: 1em;
+  }
+
+
+  .navbar button, .navbar a {
+    margin-left: 0px;
+  }
+  .navbar .DeskNavbar a {
+    color:grey;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .navbar .MobileNavbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: right;
+    right: 0;
+    justify-content: right;
+    font-size: 1.5rem;
+  } 
+
+  .navbar .MobileNavbar ul {
+    align-items: left;
+  }
+
+
+  li {
+    list-style-type: none; 
+    padding-left: 30px;
+  
+  }
+
+.navbar .MobileNavbar {
+  display: none;
+}
+
+
+
+@media ( max-width: 990px) {
+  .navbar .DeskNavbar {
+    display: none;
+  }
+
+  .navbar .MobileNavbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .MobileNavbar .Hamburger {
+   position: absolute;
+   right: 5%;
+   cursor: pointer;
+   top: 1%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+.navbar nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: right;
+  text-align: right;
+  height: 50%;
+  top: 40px;
+  right: 0;
+  width: 30%;
+  background-color: #d9f9dc;
+  z-index: 10000;
+
+}
+
+.navbar nav ul li {
+  padding-top: 15%;
+  padding-left: 15%;
+  
+}
+
+.navbar {
+  opacity: 1;
+  height: 45px;
+}
+
+.navbar a:hover {
+  border-bottom: none;
+  color: green
+}
+
+}
+
+
+@media ( max-width: 580px) {
+  
+  .navbar .MobileNavbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: left;
+    left: 0;
+    justify-content: left;
+    font-size: 1.2rem;
+  } 
+
+  .logoMobile {
+    display: inline-flex;
+  }
+
+  .navbar nav ul {
+    height: 35%;
+  
+ 
+  
+  }
+
+}
+
+@media ( max-width: 400px) {
+  
+  .navbar .MobileNavbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: left;
+    right: 0;
+    justify-content: left;
+    font-size: 1rem;
+  } 
+
+
+  .navbar nav ul {
+    height: 35%;
+  
+ 
+  
+  }
+
+}
+
+@media ( max-width: 270px) {
+
+  .MobileNavbar {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: left;
+    right: 0;
+    justify-content: left;
+    font-size: 1rem;
+  } 
+
+}

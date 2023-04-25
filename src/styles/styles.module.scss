@@ -1,0 +1,166 @@
+@import '_navbar2.module';
+@import '_mobile.module';
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;400&family=Kanit:wght@300&family=Philosopher&family=Special+Elite&display=swap');
+
+
+
+$primary-color: black;
+$secondary-color: rgb(191, 191, 191);
+$inside-color: #2a2b2f;
+%text{
+       color: rgb(234, 234, 234);
+       font-family: 'Exo', sans-serif;
+       font-size: 1.5rem;
+}
+
+
+%card {
+
+    background: $primary-color;
+        color: $secondary-color;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        position: relative;
+
+    // &:hover {
+    //     transform: translateY(-10px);
+    // }
+}
+
+
+%box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: $inside-color;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+%buttonLink {
+    font-family: 'Play', sans-serif;
+    background: $primary-color;
+    color: $secondary-color;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    display: grid;
+    padding: 8px 0px,;
+    margin-bottom: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+ul {
+    font-family: 'Philosopher', sans-serif;
+    padding: 0 0 0 0 ;
+}
+
+
+.post-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+
+    .card{
+    @extend %card
+    }
+
+  
+    h3 {
+        color: #555;
+        margin-bottom: 6px;
+    }
+
+    p {
+        color: #999;
+        font-size: 0.9em;
+    }
+
+    div {
+        color: #555;
+        font-size: 0.7em;
+        margin: 20px 0;
+        line-height: 1.5em;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        font-size: 0.9em;
+        width: 100px;
+        text-align: center;
+        width: 120px;
+        padding: 8px;
+        border-radius: 4px;
+        margin: 20px auto 0;
+    }
+
+
+}
+
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+    padding: 0% 0% 0% 0% ;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    z-index: 9;
+    
+    }
+    
+    .copyright {
+      @extend %text;
+      vertical-align: middle ;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: $secondary-color;
+      font-size: 1.1rem;
+      padding-top: 12px;
+    }
+  
+
+    @media ( max-width: 990px) {
+
+    
+.footer {
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+    padding: 0% 0% 0% 0% ;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    z-index: 9;
+    
+    }
+
+    }

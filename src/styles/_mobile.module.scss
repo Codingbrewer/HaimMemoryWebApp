@@ -1,0 +1,144 @@
+@media ( max-width: 990px) {
+
+
+  .logoMobile {
+    display: none;
+  }
+
+  .DeskNavbar {
+      display: none;
+    }
+
+
+  .MobileNavbar {
+      display: flex;
+      opacity: 1;
+      height: 40px;
+
+      li {
+justify-content: center;
+padding-right: 35%;
+      }
+
+    
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        right: 10;
+        font-size: 1.3rem;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        height: 30%;
+        padding-top: 15px;
+        top: 60px;
+        right: 0;
+        width: 20%;
+        background-color: $primary-color;
+        z-index: 10000;
+        gap: 50px;
+      
+      }
+
+      .Hamburger {
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        top: 2%;
+       }
+
+       .check {
+        padding-right: 50%;
+      }
+
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+  
+  }
+  
+  
+  @media ( max-width: 580px) {
+    
+    .navbar .MobileNavbar a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      text-align: left;
+      left: 0;
+      justify-content: left;
+      font-size: 1.2rem;
+    } 
+  
+    .Hamburger {
+      position: absolute;
+      right: 10%;
+      cursor: pointer;
+      top: 1.5%;
+     }
+  
+  }
+  
+  @media ( max-width: 400px) {
+    .MobileNavbar {
+      display: flex;
+     
+  a  {
+      color: $white;
+      text-decoration: none;
+      text-align: left;
+      right: 0;
+      justify-content: left;
+      font-size: 1rem;
+    } 
+  
+    ul{
+      
+      height: 300px;
+      width: 120px;
+    }
+    }
+  }
+  
+  @media ( max-width: 270px) {
+  
+    .MobileNavbar {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      text-align: left;
+      right: 0;
+      justify-content: left;
+      font-size: 1rem;
+    } 
+  
+  }
+  
+
+
+  ///landscape
+
+  @media (orientation: landscape) {
+
+  
+  .MobileNavbar{
+    font-size: 1rem;
+
+    a {
+      text-align: center;  
+      justify-content: center;
+    }
+  } 
+
+
+  ul {
+    height: 100%;
+    
+  }
+}

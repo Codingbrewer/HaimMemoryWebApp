@@ -1,0 +1,55 @@
+$primary-color: black;
+$secondary-color: rgb(196, 196, 196);
+$white: #ffffff;
+
+
+  .DeskNavbar {
+    a {
+    color:$white;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  ul {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1500px;
+    align-items: center;
+    font-family: 'Philosopher', sans-serif;
+    padding: 0;
+  
+}
+
+.logo{
+  padding-left: 0px;
+  padding-right: 180px;
+}
+
+  }
+
+  .MobileNavbar  {
+    display: none;
+    color: $secondary-color;
+    text-decoration: none;
+    text-align: right;
+    right: 0;
+    justify-content: right;
+    font-size: 1.5rem;
+  } 
+
+  ul {
+    align-items: left;
+    
+  }
+
+  li {
+    color: $secondary-color;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+
+
+
+
+
+

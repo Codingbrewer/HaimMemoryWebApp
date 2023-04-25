@@ -1,0 +1,370 @@
+@import 'styles.module';
+
+
+
+.story{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding-top: 5%;
+  margin: auto;
+  color: black;
+  height: 100%;
+  width: 800px;
+
+
+  .title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Play', sans-serif;
+
+     }  
+
+     .StoryPic {
+  width: 80%;
+  justify-self: end;
+  
+
+}
+
+  p {
+    @extend %text;
+    font-size: 1rem;
+    color: black
+
+    
+
+}
+
+
+
+}
+
+.link {
+  @extend %buttonLink;
+ 
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 0px;
+    height: 100%;
+
+
+
+    .card {
+        @extend %card;
+        background-color: $primary-color;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        margin: 25px;
+        transition: 0.5s; 
+        
+        }
+            .box {
+             @extend %box;
+             width: 750px;
+             min-height: 400px;
+             background-color: $primary-color;
+             position: absolute;
+             padding: 3%;
+             height: fit-content;
+             justify-content: center;
+             text-align: left;
+             align-items: center;
+             display: block;
+             margin: 25px auto;
+             position: sticky;
+             
+p {
+    @extend %text;
+    font-size: 0.9rem;
+
+}
+
+h2 {
+
+    @extend %text;
+    font-size: 1rem;
+}
+
+
+
+    }
+  
+}
+
+
+@media ( max-width: 850px) {
+.story{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding-top: 5%;
+  margin: auto;
+  color: black;
+  height: 100%;
+
+  .StoryPic {
+    width: 60%;
+    justify-self: center;
+  }
+
+
+  .title{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding-bottom: 0%;
+
+     }  
+
+
+  p {
+    @extend %text;
+    font-size: 1rem;
+    color: black;
+   
+
+    
+
+} 
+
+
+}
+
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  margin: auto;
+  padding-top: 0px;
+  height: 100%;
+
+
+
+  .card {
+      
+      max-width: 500px;
+    
+      
+      }
+          .box {
+           width: 500px;
+           padding: 6%;
+           
+     
+
+  }
+
+}
+
+
+
+
+}
+
+
+  @media ( max-width: 650px) {
+  .formContainer {
+    padding-left: 0%;
+  }
+  
+  .story {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding-top: 5%;
+    margin: auto;
+    color: black;
+    height: 100%;
+    
+  
+  
+    .title{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 0%;
+  
+       }  
+
+  
+    p {
+      
+      font-size: 1rem;
+      color: black;
+     
+      
+  
+  } 
+  }
+
+  .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 0px;
+    height: 100%;
+  
+  
+  
+    .card {
+        
+        max-width: 400px;
+      
+        
+        }
+            .box {
+              
+             width: 350px;
+      
+    }
+  }
+}
+
+  @media ( max-width: 400px) {
+
+   
+    .formContainer .card {
+      position: relative;
+      background-color: white;
+      min-width: 270px;
+      height: 450px;
+      text-decoration: none;
+      box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      margin: 0px, ;
+      transition: 0.5s;
+    }
+
+    .formContainer {
+      margin: 0px 0;
+
+    }
+
+    .orderForm input  {
+        font-family: 'Play', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 100;
+        color:black;
+        z-index: 10000 !important;
+        padding-right: 20%;
+        margin-bottom: 3%;
+        cursor:text
+    
+        
+      }
+
+      .story {
+        width: 250px;
+       
+        
+      
+        .title{
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          padding-bottom: 0%;
+      
+    }
+      
+        p {
+
+          font-size: 1rem;
+          color: black;
+          text-align: left;  
+      
+      } 
+
+      h2 {
+        font-size: 1.5rem;
+       }
+
+       h3 {
+        font-size: 1.2rem;
+       }
+
+      }
+    
+
+
+  }
+
+  @media ( max-width: 270px) {
+
+  
+      .story {
+        width: 150px;
+       
+        
+      
+        .title{
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          padding-bottom: 0%;
+      
+           }  
+
+         
+      }
+    
+
+
+  }
+
+
+  ///landscape 
+  
+  @media ( max-height: 500px) {
+
+  
+    .story {
+      width: 150px;
+     
+      
+    
+      .title{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 0%;
+    
+         }  
+
+         .StoryPic {
+          display: none;
+         }
+
+       
+    }
+  }

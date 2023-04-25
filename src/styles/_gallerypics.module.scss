@@ -1,0 +1,74 @@
+@import 'styles.module';
+
+
+
+.galleryBody {
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+
+
+
+.postList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    padding: 5%;
+
+    .card {
+            padding: .5rem;
+            font-size: 1.2rem;
+            text-align: center;
+            background-color: #333;
+            background: $primary-color;
+          }
+
+        .gallerySinglePic {
+
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: opacity 0.25s ease-in-out;
+    
+        }
+            h3 {
+                color:rgb(218, 218, 218);
+                margin-bottom: 6px;
+                text-align: center;
+            }
+
+        }
+
+        h3 {
+            color: #555;
+            margin-bottom: 4px;
+            font-family: 'Special Elite', cursive;
+            font-weight: 200;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+
+        p {
+            color: $secondary-color;
+            font-size: 0.9em;
+        }
+
+        div {
+            color: #555;
+            font-size: 0.7em;
+            margin: 20px 0;
+            line-height: 1.5em;
+        }
+
+
+        .link {
+            @extend %buttonLink
+        }
+    
+    }
+
+
+    

@@ -1,0 +1,511 @@
+@import 'styles.module';
+
+
+.photosBody {
+
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+}
+
+.postBody {
+    
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+}
+
+
+.postList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 40px;
+    margin: 40px;
+
+
+    .card {
+        background: $primary-color;
+        color: $secondary-color;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        position: relative;
+
+        .gallerySinglePic {
+
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+    
+
+        }
+
+        h3 {
+            @extend %text;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        p {
+            @extend %text;
+            color: $secondary-color;
+            font-size: 0.7em;
+        }
+
+        div {
+            @extend %text;
+            font-style:italic;
+            font-size: 0.7em;
+            margin: 20px 0;
+            line-height: 1.5em;
+        }
+
+        .fromName {
+            font-weight: bold;
+            font-size: 1rem;
+            font-style:italic;
+        }
+
+        a {
+            @extend %text;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9em;
+            width: 100px;
+            text-align: center;
+            font-weight: 400;
+            width: 120px;
+            padding: 8px;
+            border-radius: 4px;
+            margin: 20px auto 0;
+        }
+        
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        .link {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 1rem;
+        }
+    
+        
+    }
+
+   
+}
+
+
+
+.galleryList {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 40px;
+    margin: 40px;
+    height: 200px;
+
+    .card {
+        background: $primary-color;
+        color: $secondary-color;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        position: relative;
+
+ 
+        h3 {
+            @extend %text;
+            color: #555;
+            margin-bottom: 6px;
+            justify-content: center;
+            align-items: center;
+            text-align: center
+        }
+
+        p {
+            @extend %text;
+            color: $secondary-color;
+            font-size: 0.7em;
+        }
+
+        div {
+            @extend %text;
+            font-style:italic;
+            font-size: 0.7em;
+            margin: 20px 0;
+            line-height: 1.5em;
+        }
+
+        .fromName {
+            font-weight: bold;
+            font-size: 1rem;
+            font-style:italic;
+        }
+
+        a {
+            @extend %text;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9em;
+            width: 100px;
+            text-align: center;
+            font-weight: 400;
+            width: 120px;
+            padding: 8px;
+            border-radius: 4px;
+            margin: 20px auto 0;
+        }
+        
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        .link {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 1rem;
+        }
+    
+        
+    }
+
+   
+}
+
+
+.post {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    position: relative;
+
+    ul {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        margin-top: 0;
+    }
+    
+     li {
+        list-style-type: none;
+        margin-right: 10px;
+        color: #777;
+    
+    
+        &::after {
+            content: ",";
+        }
+        
+        &:last-child:after {
+            content: ".";
+        }
+    }
+
+}
+
+.createButton {
+@extend %buttonLink;
+width: 250px;
+margin-top: 20px;
+
+
+}
+.edit-icon {
+    padding-top: 20px;
+}
+.method {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.deleteIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $secondary-color;
+    cursor: pointer;
+}
+
+.addAlertContainer, .deleteAlertContainer, .updateAlertContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteAlert {
+    background-color: rgb(183, 2, 51);
+}
+
+.addAlert, .updateAlert {
+    background-color: rgb(36, 156, 107);
+}
+
+.deleteAlert, .addAlert, .updateAlert{
+    visibility: hidden;
+    color: #e4e4e4;
+    padding: 20px 40px;
+}
+
+.deleteAlert.show, .addAlert.show, .updateAlert.show{
+    visibility: visible;
+}
+
+.editIcon {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: $secondary-color;
+    cursor: pointer;
+}
+
+.candle {
+    width: 20%;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+.clear {
+    clear: both;
+    height: 60px;
+}
+
+@media ( max-width: 990px) {
+
+    .clear { 
+        clear: both; 
+        height: 50px;
+    }
+
+    .postList {
+        grid-template-columns: 1fr;
+        max-width: 990px;
+        margin: 60px auto; 
+        min-height: 800px;
+        padding-left: 0px;
+
+    
+    
+        .card {
+            padding: 30px;
+            position: relative;
+            width: 300px;
+            margin: auto;
+
+         
+    
+            .gallerySinglePic {
+    
+                width: 80px;
+                justify-content: center;
+                align-items: center;
+        
+    
+            }
+    
+            h3 {
+                @extend %text;
+                font-size: 1.2rem
+            }
+    
+            p {
+              
+                font-size: 0.6em;
+            }
+    
+            div {
+     
+                font-size: 0.6em;
+              
+            }
+    
+            .fromName {
+                
+                font-size: 0.9rem;
+                
+            }
+    
+            a {
+             
+                font-size: 0.7em;
+            }
+            
+            &:hover {
+                transform: translateY(-10px);
+            }
+    
+            .link {
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: 1rem;
+            }
+        
+            
+        }
+    
+       
+    }
+    
+    
+    .post {
+        width: 500px;
+        margin: 40px auto;
+        text-align: center;
+        background: #fff;
+        padding: 40px;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+        position: relative;
+    
+        ul {
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            margin-top: 0;
+        }
+        
+         li {
+            list-style-type: none;
+            margin-right: 10px;
+            color: #777;
+        
+        
+            &::after {
+                content: ",";
+            }
+            
+            &:last-child:after {
+                content: ".";
+            }
+        }
+    
+    }
+    
+
+
+
+
+}
+
+@media ( max-width: 500px) {
+
+.postList {
+    grid-template-columns: 1fr;
+
+}
+
+}
+
+
+@media ( max-width: 400px) {
+
+    .postList {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0x auto; 
+        min-height: 800px;
+        padding-left: 0px;
+
+    
+    
+        .card {
+            padding: 30px;
+            position: relative;
+            width: 250px;
+            margin: auto;
+
+         
+    
+            .gallerySinglePic {
+    
+                width: 80px;
+                justify-content: center;
+                align-items: center;
+        
+    
+            }
+    
+            h3 {
+                font-size: 1.2rem
+            }
+    
+            p {
+              
+                font-size: 0.6em;
+            }
+    
+            div {
+     
+                font-size: 0.6em;
+              
+            }
+    
+            .fromName {
+                
+                font-size: 0.9rem;
+                
+            }
+    
+            a {
+             
+                font-size: 0.7em;
+            }
+            
+            &:hover {
+                transform: translateY(-10px);
+            }
+    
+            .link {
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: 1rem;
+            }
+        
+            
+        }
+    
+       
+    }
+    
+    }
+
+
+    
+@media ( max-width: 340px) {
+
+    .postList {
+    
+        .card {
+            padding: 30px;
+            position: relative;
+            width: 180px;
+            margin: auto;
+
+            
+        }
+    
+       
+    }
+
+    .createButton {
+    display: flex;
+    font-size: 1.1rem;    
+    height: 45px;
+    width: 150px;
+    margin-top: 50px;
+    text-align: center;
+    vertical-align: middle;
+
+    
+    }
+}
