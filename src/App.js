@@ -2,6 +2,7 @@ import './App.css';
 
 //React Router
 import {Routes,BrowserRouter, Route} from 'react-router-dom';
+import React, { useEffect } from 'react';
 
 //Pages
 import {Create} from './Pages/posts/Create';
@@ -21,6 +22,10 @@ import Footer from './components/Footer';
 
 
 function App() {
+  
+      useEffect(() => {
+    document.title = "Haim Adler 1941-2021";
+  }, []);
 
   return (
     <div className="">
